@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  overflow-x:hidden;
+}
+.uaStar {
+  display: flex;
+  height: 100vh;
+}
+.uaStar__software,
+.uaStar__design {
+  transition: flex 0.4s ease;
+}
+.uaStar__software {
+  flex: 1 1 56%;
+  background-image: url(images/Software-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.uaStar__design {
+  flex: 1 1 44%;
+  background-image: url(images/Design-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  position: relative;
+}
+.uaStar__software:hover,
+.uaStar__design:hover {
+  flex: 0.000000001 0.00000001 67%;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  max-width: 650px;
+  width: 100%;
+  position: absolute;
+  bottom: 73px;
+}
+.design__menu {
+  color: #3C2F2F;
+  right: 128px;
+  transform: translateX(120%);
+}
+.design:hover .design__menu,
+.software:hover .software__menu {
+  transform: translateX(0);
+  transition: ease 0.5s;
+}
+.design__menu .menu__icon {
+  fill: #3C2F2F;
+  width: 24px;
+  height: 24px;
+}
+.design__menu .menu__icon_mail {
+  fill: none;
+  stroke: #3C2F2F;
+}
+.software__menu {
+  color: #FFF;
+  left: 128px;
+  transform: translateX(-120%);
+}
+.software__menu .menu__icon {
+  fill: #FFF;
+  width: 24px;
+  height: 24px;
+}
+.software__menu .menu__icon_mail {
+  fill: none;
+  stroke: #FFF;
+}
+.menu__social {
+  display: flex;
+  align-items: center;
+}
+.menu__social .menu__social-link + .menu__social-link {
+  padding-left: 24px;
+}
+.menu__mail,
+.menu__website {
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  color: #3C2F2F;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 16px;
+}
+.software__menu .menu__mail,
+.software__menu .menu__website {
+  color: #FFF;
+}
+.menu__mail:hover,
+.menu__website:hover {
+  color: #FF0407;
+  border: 1px solid #FF0407;
+  transition: all 1s ease;
+}
+.menu__website:hover .menu__icon_web {
+  fill: #FF0407;
+  transition: all 1s ease;
+}
+.menu__mail:hover .menu__icon_mail {
+  stroke: #FF0407;
+  transition: all 1s ease;
+}
+.menu__text {
+  padding-left: 16px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+}
